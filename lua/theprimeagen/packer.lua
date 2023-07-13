@@ -87,5 +87,18 @@ return require('packer').startup(function(use)
   use("laytan/cloak.nvim")
   use("christoomey/vim-tmux-navigator")
 
+  use ({
+      "olexsmir/gopher.nvim",
+      requires = { -- dependencies
+      "nvim-lua/plenary.nvim",
+      "nvim-treesitter/nvim-treesitter",
+  },
+  config = function(_, opts)
+      require("gopher").setup(opts)
+  end,
+  build = function()
+      vim.cmd [[silent! GoInstallDeps]]
+  end,
+  })
 end)
 
