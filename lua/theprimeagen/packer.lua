@@ -87,6 +87,8 @@ return require('packer').startup(function(use)
   use("laytan/cloak.nvim")
   use("christoomey/vim-tmux-navigator")
 
+  use("ThePrimeagen/vim-be-good")
+
   use ({
       "olexsmir/gopher.nvim",
       requires = { -- dependencies
