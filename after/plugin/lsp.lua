@@ -8,7 +8,7 @@ lsp.ensure_installed({
   'clangd',
   'gopls',
   'elixirls',
-  'zig',
+  'zls',
 })
 
 -- Fix Undefined global 'vim'
